@@ -1,0 +1,73 @@
+HTTP/1.1 200 OK
+Date: Thu, 28 Jul 2016 11:08:58 GMT
+Server: 
+Pragma: no-cache
+Cache-Control: no-cache
+Expires: Thu, 01 Jan 1970 00:00:00 GMT
+Content-Type: text/xml;charset=UTF-8
+Strict-Transport-Security: max-age=31536000; includeSubDomains;preload
+Transfer-Encoding: chunked
+
+<?xml version="1.0" encoding="UTF-8"?>
+<serv:message xmlns:serv="http://www.webex.com/schemas/2002/06/service" xmlns:com="http://www.webex.com/schemas/2002/06/common" xmlns:history="http://www.webex.com/schemas/2002/06/service/history">
+  <serv:header>
+    <serv:response>
+      <serv:result>SUCCESS</serv:result>
+      <serv:gsbStatus>PRIMARY</serv:gsbStatus>
+    </serv:response>
+  </serv:header>
+  <serv:body>
+    <serv:bodyContent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="history:lstmeetingattendeeHistoryResponse">
+      <history:meetingAttendeeHistory>
+        <history:meetingKey>12347890</history:meetingKey>
+        <history:confName>My Meeting</history:confName>
+        <history:ipAddress>127.0.0.2</history:ipAddress>
+        <history:clientAgent>MAC,PT</history:clientAgent>
+        <history:name>John Denver</history:name>
+        <history:email>john.denver@here.com</history:email>
+        <history:joinTime>02/12/2020 21:00:23</history:joinTime>
+        <history:leaveTime>02/12/2020 21:55:21</history:leaveTime>
+        <history:duration>55</history:duration>
+        <history:participantType>HOST</history:participantType>
+        <history:voipDuration>55</history:voipDuration>
+        <history:confID>11111111111111111</history:confID>
+        <history:externalParticipant>N/A</history:externalParticipant>
+      </history:meetingAttendeeHistory>
+      <history:meetingAttendeeHistory>
+        <history:meetingKey>12347890</history:meetingKey>
+        <history:confName>My Meeting</history:confName>
+        <history:ipAddress>127.0.0.3</history:ipAddress>
+        <history:clientAgent>MAC,Firefox</history:clientAgent>
+        <history:name>Ringo Starr</history:name>
+        <history:email>ringo.starr@here.com</history:email>
+        <history:joinTime>02/12/2020 21:01:08</history:joinTime>
+        <history:leaveTime>02/12/2020 21:55:27</history:leaveTime>
+        <history:duration>55</history:duration>
+        <history:participantType>ATTENDEE</history:participantType>
+        <history:voipDuration>55</history:voipDuration>
+        <history:confID>11111111111111111</history:confID>
+        <history:externalParticipant>N/A</history:externalParticipant>
+      </history:meetingAttendeeHistory>
+      <history:meetingAttendeeHistory>
+        <history:meetingKey>12347890</history:meetingKey>
+        <history:confName>My Meeting</history:confName>
+        <history:ipAddress>127.0.0.4</history:ipAddress>
+        <history:clientAgent>WINDOWS,PT</history:clientAgent>
+        <history:name>Celine Dion</history:name>
+        <history:email>celine.dion@here.com</history:email>
+        <history:joinTime>02/12/2020 21:08:11</history:joinTime>
+        <history:leaveTime>02/12/2020 21:55:42</history:leaveTime>
+        <history:duration>48</history:duration>
+        <history:participantType>ATTENDEE</history:participantType>
+        <history:voipDuration>48</history:voipDuration>
+        <history:confID>11111111111111111</history:confID>
+        <history:externalParticipant>N/A</history:externalParticipant>
+      </history:meetingAttendeeHistory>
+      <history:matchingRecords>
+        <serv:total>3</serv:total>
+        <serv:returned>3</serv:returned>
+        <serv:startFrom>1</serv:startFrom>
+      </history:matchingRecords>
+    </serv:bodyContent>
+  </serv:body>
+</serv:message>
