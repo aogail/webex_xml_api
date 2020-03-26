@@ -8,6 +8,7 @@ module WebexXmlApi
     PARAMETER_MAPPING = {
       webex_id: 'webExID',
       password: 'password',
+      webex_access_token: 'webExAccessToken',
       site_id: 'siteID',
       site_name: 'siteName',
       partner_id: 'partnerID',
@@ -54,7 +55,7 @@ module WebexXmlApi
     #
     def valid?(context = self)
       return false if context.site_name.nil? || context.webex_id.nil?
-      return false if context.password.nil? && context.session_ticket.nil?
+      return false if context.password.nil? && context.session_ticket.nil? && context.webex_access_token.nil?
       true
     end
   end

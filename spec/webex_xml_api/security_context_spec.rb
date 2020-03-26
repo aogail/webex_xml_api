@@ -52,8 +52,18 @@ describe WebexXmlApi::SecurityContext do
       expect(sc.valid?).to be_falsey
     end
 
-    it 'succeeds if all required parameters are set' do
+    it 'succeeds if password is set' do
       sc = subject.new(site_name: 'test', webex_id: 'test', password: 'test')
+      expect(sc.valid?).to be_truthy
+    end
+
+    it 'succeeds if session_ticket is set' do
+      sc = subject.new(site_name: 'test', webex_id: 'test', session_ticket: 'test')
+      expect(sc.valid?).to be_truthy
+    end
+
+    it 'succeeds if webex_access_token is set' do
+      sc = subject.new(site_name: 'test', webex_id: 'test', webex_access_token: 'test')
       expect(sc.valid?).to be_truthy
     end
   end
